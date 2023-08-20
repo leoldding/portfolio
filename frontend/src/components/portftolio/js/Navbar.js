@@ -26,12 +26,12 @@ function Navbar() {
                 </a>
                 <button type={"button"}
                         onClick={handleMenuClick}
-                        className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg md:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600"}
+                        className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg md:invisible hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600"}
                         aria-controls={"navbar-solid-bg"}
                         aria-expanded={"false"}>
                     <Menu />
                 </button>
-                <div className={`${menuCard} ${menuFade} transition-opacity duration-500 w-full md:block md:w-auto`}
+                <div className={`${menuCard} ${menuFade} transition-opacity duration-500 w-full md:visible md:opacity-100 md:w-auto`}
                      id={"navbar-solid-bg"}>
                     <ul className={"absolute right-4 md:static z-10 flex flex-col font-medium mt-4 rounded-lg bg-neutral-200 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-neutral-800 md:dark:bg-transparent dark:border-neutral-700"}>
                         <li>

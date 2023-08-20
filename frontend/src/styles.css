@@ -931,6 +931,14 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:invisible {
+    visibility: hidden;
+  }
+
   .md\:static {
     position: static;
   }
@@ -1011,6 +1019,10 @@ body {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
   }
 
   .md\:hover\:text-cyan-500:hover {
