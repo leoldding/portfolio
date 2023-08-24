@@ -16,6 +16,7 @@ jobs:
         working-directory: ./frontend
         run: |
           npm ci
+          npx tailwindcss -i ./src/tailwind.css -o ./src/styles.css
           npm run build --if-present
           npm run test_deploy
   Build_and_Test_Backend:
