@@ -9,14 +9,20 @@ function Home() {
                     Hello, I'm Leo Ding!
                 </h1>
                 <h2 className={"text-lg md:text-2xl pb-6"}>
-                    I am an NYU graduate with a degree in Computer Science and Data Science.
+                    I am an
+                    <div className={"inline italic text-purple-600"}> NYU </div>
+                    graduate with a degree in
+                    <div className={"inline font-bold italic bg-orange-200 mx-1 px-1"}>Computer Science</div>
+                    and
+                    <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Data Science</div>.
                 </h2>
                 <h2 className={"text-lg md:text-2xl pb-6"}>
-                    I enjoy learning about technology and am interested in becoming a Backend Engineer.
+                    I enjoy learning about technology and am interested in becoming a
+                    <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Backend Engineer</div>.
                 </h2>
             </div>
             <div className={"w-56 h-56 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
-                <img className={"w-full h-auto self-center scale-110 -translate-y-12"}
+                <img className={"transition duration-300 w-full h-auto self-center scale-125 -translate-y-16"}
                      src={profile}
                      alt={"profile"} />
             </div>
