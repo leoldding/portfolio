@@ -3,8 +3,8 @@ import ProjectCard from './ProjectCard.js';
 
 function Projects() {
     return (
-        <div className={"max-w-screen-xl px-6 md:px-16 py-4 mx-auto"}>
-            <h1 className={"text-2xl md:text-4xl pb-4 md:pb-6"}>
+        <div className={"max-w-screen-xl px-16 py-4 mx-auto"}>
+            <h1 className={"text-2xl md:text-4xl pb-4"}>
                 Projects
             </h1>
             <div className={"flex flex-col md:flex-row flex-wrap"}>
