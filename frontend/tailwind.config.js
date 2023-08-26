@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       "colors": {
-        "orange": {
-          50: "#FFF6EB",
+          "orange": {
+              50: "#FFF6EB",
               100: "#FFF0DB",
               200: "#FFDEB3",
               300: "#FFCE8F",
@@ -16,8 +16,11 @@ module.exports = {
               800: "#804800",
               900: "#422600",
               950: "#1F1100"
-        }
-      }
+          }
+      },
+    "screens": {
+          "md": "850px"
+    }
     },
   },
   plugins: [],
