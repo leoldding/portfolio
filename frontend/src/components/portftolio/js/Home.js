@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import profile from './../../../assets/profile.jpg'
 
 function Home() {
@@ -20,8 +21,15 @@ function Home() {
                     I enjoy learning about technology and am interested in becoming a
                     <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Backend Engineer</div>.
                 </h2>
+                <div className={"pt-2 md:pt-3 pb-6"}>
+                    <button className={"text-md md:text-2xl text-white p-2 md:p-3 rounded-md bg-orange-600 transition duration-300 hover:bg-orange-400 hover:-translate-x-1 hover:-translate-y-1"}>
+                        <Link to={"/projects"}>
+                            Check out my projects!
+                        </Link>
+                    </button>
+                </div>
             </div>
-            <div className={"w-56 h-56 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
+            <div className={"w-56 h-56 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto md:mx-8 md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
                 <img className={"transition duration-300 w-full h-auto self-center scale-125 -translate-y-16"}
                      src={profile}
                      alt={"profile"} />
