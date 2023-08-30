@@ -22,7 +22,7 @@ function Home() {
                     <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Backend Engineer</div>.
                 </h2>
                 <div className={"pt-2 md:pt-3"}>
-                    <button className={"text-md md:text-2xl text-white p-2 md:p-3 rounded-md bg-orange-500 transition duration-300 md:hover:bg-orange-400 md:hover:-translate-x-1 hover:-translate-y-1"}>
+                    <button className={"text-md md:text-2xl text-white p-2 md:p-3 rounded-md bg-orange-500 transition duration-300 md:hover:bg-orange-400 md:hover:-translate-x-1 md:hover:-translate-y-1"}>
                         <Link to={"/projects"}>
                             Check out my projects!
                         </Link>

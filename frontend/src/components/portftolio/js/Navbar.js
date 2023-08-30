@@ -27,7 +27,7 @@ function Navbar() {
                 </Link>
                 <button type={"button"}
                         onClick={handleMenuClick}
-                        className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:invisible hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-orange-200"}
+                        className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:invisible md:hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-orange-200"}
                         aria-controls={"navbar-solid-bg"}
                         aria-expanded={"false"}>
                     <Menu sx={{fontSize:18}}/>
