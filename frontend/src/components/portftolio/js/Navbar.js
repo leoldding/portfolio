@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
         <nav className={"border-b-2 border-orange-200"}>
-            <div className={"max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"}>
+            <div className={"max-w-screen-xl h-[72px] flex flex-wrap items-center justify-between mx-auto py-4 px-16"}>
                 <Link to={"/"} className={"flex items-center"}>
                     <span className={"transition block text-2xl font-semibold py-2 md:hover:text-orange-500 md:hover:-translate-y-1 md:p-0"}>Leo Ding</span>
                 </Link>
@@ -30,16 +30,13 @@ function Navbar() {
                         className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:invisible hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-orange-200"}
                         aria-controls={"navbar-solid-bg"}
                         aria-expanded={"false"}>
-                    <Menu />
+                    <Menu sx={{fontSize:18}}/>
                 </button>
                 <div className={`${menuCard} ${menuFade} transition-opacity duration-500 w-full md:visible md:opacity-100 md:w-auto`}
                      id={"navbar-solid-bg"}>
                     <ul className={"absolute right-4 md:static z-10 flex flex-col font-medium mt-4 rounded-lg bg-orange-200 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent"}>
                         <li>
                             <Link to={"/projects"} className={"transition duration-300 block py-2 pl-3 pr-4 md:hover:text-orange-500 md:hover:-translate-y-1 md:p-0"}>Projects</Link>
-                        </li>
-                        <li>
-                            <Link to={"/about"} className={"transition duration-300 block py-2 pl-3 pr-4 md:hover:text-orange-500 md:hover:-translate-y-1 md:p-0"}>About</Link>
                         </li>
                         <li>
                             <Link
