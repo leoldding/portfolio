@@ -39,9 +39,6 @@ function Navbar() {
                             <Link to={"/projects"} className={"transition duration-300 block py-2 pl-3 pr-4 md:hover:text-orange-500 md:hover:-translate-y-1 md:p-0"}>Projects</Link>
                         </li>
                         <li>
-                            <Link to={"/about"} className={"transition duration-300 block py-2 pl-3 pr-4 md:hover:text-orange-500 md:hover:-translate-y-1 md:p-0"}>About</Link>
-                        </li>
-                        <li>
                             <Link
                                 to={"https://github.com/leoldding"}
                                 target={"_blank"}
