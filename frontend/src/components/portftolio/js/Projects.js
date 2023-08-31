@@ -1,5 +1,6 @@
-import React from 'react';
-import ProjectCard from './ProjectCard.js';
+import React from "react";
+
+import ProjectCard from "./ProjectCard.js";
 
 function Projects() {
     return (
