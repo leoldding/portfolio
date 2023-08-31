@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Menu } from "@mui/icons-material";
+import { Link } from 'react-router-dom';
+import { Menu, Close } from "@mui/icons-material";
 
 function SideMenu() {
     const [blur, setBlur] = useState("backdrop-blur-none");
@@ -27,8 +28,32 @@ function SideMenu() {
             </button>
             <div className={` ${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-100`}
                  onClick={handleSideMenu}>
-                <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3"}
+                <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3 flex flex-col font-medium items-center"}
                      onClick={(e) => e.stopPropagation()}>
+                    <Close className={"mt-4 mr-4 mb-8 ml-auto"} onClick={handleSideMenu} />
+                    <ul className={"text-xl space-y-10"}>
+                        <li>
+                            <Link to={"/projects"} onClick={handleSideMenu}>
+                                  Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"https://github.com/leoldding"}
+                                  target={"_blank"}
+                                  rel={"noopener noreferrer"}
+                                  onClick={handleSideMenu}>
+                                Github
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"https://linkedin.com/in/leo-ding"}
+                                  target={"_blank"}
+                                  rel={"noopener noreferrer"}
+                                  onClick={handleSideMenu}>
+                                LinkedIn
+                            </Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

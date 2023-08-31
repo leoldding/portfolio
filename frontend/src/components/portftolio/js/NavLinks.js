@@ -22,7 +22,7 @@ function NavLinks() {
                 </li>
                 <li>
                     <Link
-                        to={"https://www.linkedin.com/in/leo-ding"}
+                        to={"https://linkedin.com/in/leo-ding"}
                         target={"_blank"}
                         rel={"noopener noreferrer"}
                         sx={{marginLeft: 1}}
