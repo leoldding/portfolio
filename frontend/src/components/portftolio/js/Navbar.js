@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import NavLinks from './NavLinks';
-import SideMenu from './SideMenu';
+import React from "react";
+import { Link } from "react-router-dom";
+
+import NavLinks from "./NavLinks";
+import SideMenu from "./SideMenu";
 
 function Navbar() {
     return (

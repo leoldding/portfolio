@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, Close, Home, Code, GitHub, LinkedIn } from "@mui/icons-material";
 
 function SideMenu() {
@@ -22,11 +22,10 @@ function SideMenu() {
         <div className={"md:hidden"}>
             <button type={"button"}
                 onClick={handleSideMenu}
-                className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200"}
                 aria-expanded={"false"}>
                 <Menu className={"pb-1"} />
             </button>
-            <div className={` ${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-100`}
+            <div className={`${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-200`}
                  onClick={handleSideMenu}>
                 <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3 flex flex-col font-medium items-center"}
                      onClick={(e) => e.stopPropagation()}>

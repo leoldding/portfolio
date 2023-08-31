@@ -701,6 +701,12 @@ body {
   max-height: 850px;
 }
 
+.min-h-fit {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -863,6 +869,11 @@ body {
   background-color: rgb(255 174 66 / var(--tw-bg-opacity));
 }
 
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 206 143 / var(--tw-bg-opacity));
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -1003,6 +1014,10 @@ body {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .hover\:-translate-y-1:hover {

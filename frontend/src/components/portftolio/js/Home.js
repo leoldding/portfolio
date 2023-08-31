@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import profile from './../../../assets/profile.jpg'
+import React from "react";
+import { Link } from "react-router-dom";
+
+import profile from "./../../../assets/profile.jpg"
 
 function Home() {
     return (
