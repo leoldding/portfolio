@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Close } from "@mui/icons-material";
+import { Menu, Close, Home, Code, GitHub, LinkedIn } from "@mui/icons-material";
 
 function SideMenu() {
     const [blur, setBlur] = useState("backdrop-blur-none");
@@ -24,7 +24,7 @@ function SideMenu() {
                 onClick={handleSideMenu}
                 className={"inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-200"}
                 aria-expanded={"false"}>
-                <Menu sx={{fontSize:18}}/>
+                <Menu className={"pb-1"} />
             </button>
             <div className={` ${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-100`}
                  onClick={handleSideMenu}>
@@ -34,12 +34,12 @@ function SideMenu() {
                     <ul className={"text-xl space-y-10"}>
                         <li>
                             <Link to={"/"} onClick={handleSideMenu}>
-                                Home
+                                <Home className={"pb-1"} /> Home
                             </Link>
                         </li>
                         <li>
                             <Link to={"/projects"} onClick={handleSideMenu}>
-                                  Projects
+                                <Code className={"pb-1"}/> Projects
                             </Link>
                         </li>
                         <li>
@@ -47,7 +47,7 @@ function SideMenu() {
                                   target={"_blank"}
                                   rel={"noopener noreferrer"}
                                   onClick={handleSideMenu}>
-                                Github
+                                <GitHub className={"pb-1"}/> Github
                             </Link>
                         </li>
                         <li>
@@ -55,7 +55,7 @@ function SideMenu() {
                                   target={"_blank"}
                                   rel={"noopener noreferrer"}
                                   onClick={handleSideMenu}>
-                                LinkedIn
+                                <LinkedIn className={"pb-1"}/> LinkedIn
                             </Link>
                         </li>
                     </ul>

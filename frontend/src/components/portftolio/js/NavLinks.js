@@ -17,7 +17,7 @@ function NavLinks() {
                         sx={{marginLeft: 2}}
                         className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}
                     >
-                        <GitHub />
+                        <GitHub className={"pb-1"}/>
                     </Link>
                 </li>
                 <li>
@@ -28,7 +28,7 @@ function NavLinks() {
                         sx={{marginLeft: 1}}
                         className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}
                     >
-                        <LinkedIn />
+                        <LinkedIn className={"pb-1"}/>
                     </Link>
                 </li>
             </ul>
