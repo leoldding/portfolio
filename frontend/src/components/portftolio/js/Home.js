@@ -4,7 +4,7 @@ import profile from './../../../assets/profile.jpg'
 
 function Home() {
     return (
-        <div className={"max-w-screen-xl h-[90vh] max-h-[850px] mx-auto md:my-auto px-16 items-center justify-center flex flex-col flex-col-reverse md:flex-row"}>
+        <div className={"max-w-screen-xl h-[88vh] max-h-[850px] mx-auto md:my-auto px-16 items-center justify-center flex flex-col flex-col-reverse md:flex-row"}>
             <div className={"pr-4"}>
                 <h1 className={"text-lg sm:text-3xl md:text-4xl pb-6 font-bold italic"}>
                     Hello, I'm Leo Ding!

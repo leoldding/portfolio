@@ -8,17 +8,17 @@ import Navbar from './components/portftolio/js/Navbar';
 import './styles.css';
 
 function App() {
-  return (
+    return (
       <div>
         <Router>
-            <Navbar/>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/projects" element={<Projects/>}/>
             </Routes>
         </Router>
       </div>
-  )
+    )
 }
 
 export default App;
