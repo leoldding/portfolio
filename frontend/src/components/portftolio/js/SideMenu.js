@@ -33,6 +33,11 @@ function SideMenu() {
                     <Close className={"mt-4 mr-4 mb-8 ml-auto"} onClick={handleSideMenu} />
                     <ul className={"text-xl space-y-10"}>
                         <li>
+                            <Link to={"/"} onClick={handleSideMenu}>
+                                Home
+                            </Link>
+                        </li>
+                        <li>
                             <Link to={"/projects"} onClick={handleSideMenu}>
                                   Projects
                             </Link>
