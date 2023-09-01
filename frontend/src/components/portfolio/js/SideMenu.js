@@ -25,7 +25,7 @@ function SideMenu() {
                 aria-expanded={"false"}>
                 <Menu className={"pb-1"} />
             </button>
-            <div className={`${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-200`}
+            <div className={`${blur} ${position} fixed top-0 right-0 h-screen w-screen transition duration-200`}
                  onClick={handleSideMenu}>
                 <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3 flex flex-col font-medium items-center"}
                      onClick={(e) => e.stopPropagation()}>
