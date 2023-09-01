@@ -7,7 +7,7 @@ function ProjectCard(props) {
             <Link to={props.link}
                   target={"_blank"}
                   rel={"noopener noreferrer"}
-                  className={"block mx-auto w-[98%] h-52 bg-orange-200 rounded-md transition duration-300 md:hover:bg-orange-400 md:hover:-translate-y-1 overflow-hidden"}>
+                  className={"block mx-auto w-[98%] h-52 bg-orange-300 rounded-md transition duration-300 md:hover:bg-orange-500"}>
                 <div className={"px-6 py-4"}>
                     <h2 className={"text-lg md:text-2xl pb-2"}>{props.title}</h2>
                     <p className={"text-xs md:text-sm"}>{props.description}</p>

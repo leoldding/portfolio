@@ -9,10 +9,11 @@ function Projects() {
                 Featured Projects
             </h1>
             <div className={"flex flex-col md:flex-row flex-wrap mb-4 md:mb-8"}>
-                <ProjectCard link={"https://github.com/leoldding"}
-                             title={"Project 1"}
-                             description={"Description"}
-                             featured={true} />
+                <ProjectCard link={"https://coffee.leoding.com"}
+                             title={"Coffee Status"}
+                             description={"A web app which shows if I am currently doing work at the coffee shop I frequent. Admin authentication required to change displayed status. WebSockets used for realtime updates."}
+                             featured={true}
+                             cardId={1}/>
                 <ProjectCard link={"https://github.com/leoldding"}
                              title={"Project 2"}
                              description={"Description"}
