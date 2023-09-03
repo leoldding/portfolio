@@ -14,19 +14,19 @@ function ProjectCard(props) {
                     <div className={"flex flex-row items-center justify-between grow-0"}>
                         <h2 className={"text-lg md:text-2xl"}>{props.title}</h2>
                         <ul className={"flex flex-row space-x-4"}>
-                            <li>
+                            <li className={(props.github ? "" : "hidden")}>
                                 <Link to={props.github}
                                       target={"_blank"}
                                       rel={"noopener noreferrer"}
-                                      className={"block transition duration-300 md:hover:-translate-y-1 " + (props.github ? "" : "hidden")} >
+                                      className={"block transition duration-300 md:hover:-translate-y-1"} >
                                     <GitHub />
                                 </Link>
                             </li>
-                            <li>
+                            <li className={(props.website ? "" : "hidden")}>
                                 <Link to={props.website}
                                       target={"_blank"}
                                       rel={"noopener noreferrer"}
-                                      className={"block transition duration-300 md:hover:-translate-y-1 " + (props.website ? "" : "hidden")}>
+                                      className={"block transition duration-300 md:hover:-translate-y-1"}>
                                     <OpenInNew />
                                 </Link>
                             </li>
