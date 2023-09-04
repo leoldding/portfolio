@@ -7,7 +7,7 @@ function NavLinks() {
         <div className={"hidden md:block w-auto"}>
             <ul className={"flex flex-row font-medium space-x-8"}>
                 <li>
-                    <Link to={"/projects"} className={"transition duration-300 block hover:text-orange-500 hover:-translate-y-1 p-0"}>Projects</Link>
+                    <Link to={"/projects"} className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}>Projects</Link>
                 </li>
                 <li>
                     <Link

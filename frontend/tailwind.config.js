@@ -21,7 +21,10 @@ module.exports = {
     "screens": {
           "sm": "450px",
           "md": "850px"
-    }
+      },
+    "fontSize": {
+          "xxs": "0.625rem"
+     },
     },
   },
   plugins: [],

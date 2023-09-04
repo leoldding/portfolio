@@ -7,6 +7,7 @@ import Navbar from "./components/portfolio/js/Navbar";
 import Footer from "./components/portfolio/js/Footer";
 import NotFound from "./components/portfolio/js/404";
 
+
 import "./styles.css";
 
 function App() {
