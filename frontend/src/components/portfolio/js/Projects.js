@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard.js";
 
 function Projects() {
     return (
-        <div className={"max-w-screen-xl px-16 py-4 mx-auto"}>
+        <div className={"max-w-screen-xl min-h-[calc(100%-110px)] px-16 py-4 mx-auto"}>
             <h1 className={"text-2xl md:text-4xl pb-4"}>
                 Featured Projects
             </h1>
