@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/portfolio/js/Home";
 import Projects from "./components/portfolio/js/Projects";
 import Navbar from "./components/portfolio/js/Navbar";
+import Footer from "./components/portfolio/js/Footer";
 import NotFound from "./components/portfolio/js/404";
 
 import "./styles.css";
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/projects" element={<Projects/>}/>
                 <Route path="*" element={<NotFound/>}/>
             </Routes>
+            <Footer />
         </Router>
       </div>
     )
