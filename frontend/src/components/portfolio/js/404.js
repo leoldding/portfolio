@@ -4,7 +4,7 @@ import SentimentVeryDissatisfiedIcon from '@mui/icons-material/SentimentVeryDiss
 
 function NotFound() {
     return (
-        <div className={"w-full h-[calc(100%-74px)] bg-gradient-to-b from-orange-100 to-orange-400 flex flex-col items-center justify-center space-y-12"}>
+        <div className={"w-full h-[calc(100%-110px)] bg-gradient-to-b from-orange-100 to-orange-400 flex flex-col items-center justify-center space-y-12"}>
             <h1 className={"text-6xl md:text-8xl italic"}>
                 404
             </h1>
