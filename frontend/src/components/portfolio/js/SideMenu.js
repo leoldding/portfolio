@@ -25,11 +25,11 @@ function SideMenu() {
                 aria-expanded={"false"}>
                 <Menu className={"pb-1"} />
             </button>
-            <div className={`${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-200`}
+            <div data-testid={"menuBackground"} className={`${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-200`}
                  onClick={handleSideMenu}>
                 <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3 flex flex-col font-medium items-center"}
                      onClick={(e) => e.stopPropagation()}>
-                    <Close className={"mt-4 mr-4 mb-8 ml-auto"} onClick={handleSideMenu} />
+                    <Close data-testid={"closeButton"} className={"mt-4 mr-4 mb-8 ml-auto"} onClick={handleSideMenu} />
                     <ul className={"text-xl space-y-10"}>
                         <li>
                             <Link to={"/"} onClick={handleSideMenu}>
@@ -46,7 +46,7 @@ function SideMenu() {
                                   target={"_blank"}
                                   rel={"noopener noreferrer"}
                                   onClick={handleSideMenu}>
-                                <GitHub className={"pb-1"}/> Github
+                                <GitHub className={"pb-1"}/> GitHub
                             </Link>
                         </li>
                         <li>
