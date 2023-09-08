@@ -15,14 +15,17 @@ describe("404", () => {
 
         textElement = getByText(/PAGE NOT FOUND/);
         expect(textElement).toBeInTheDocument();
+
+        textElement = getByText(/Go Home/);
+        expect(textElement).toBeInTheDocument();
     });
 
     it("button has correct route", () => {
-        const { getByText } = render (
+        const { getByRole } = render (
            <Router>
                <NotFound/>
            </Router>);
-        const buttonElement = getByText(/Go Home/);
+        const buttonElement = getByRole("link");
         expect(buttonElement).toBeInTheDocument();
         expect(buttonElement).toHaveAttribute("href", "/");
     });
