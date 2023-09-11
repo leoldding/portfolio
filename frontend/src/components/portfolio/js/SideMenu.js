@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Close, Home, Code, GitHub, LinkedIn } from "@mui/icons-material";
+import { Menu, Close, Home, Code, Description, GitHub, LinkedIn } from "@mui/icons-material";
 
 function SideMenu() {
     const [blur, setBlur] = useState("backdrop-blur-none");
@@ -39,6 +39,14 @@ function SideMenu() {
                         <li>
                             <Link to={"/projects"} onClick={handleSideMenu}>
                                 <Code className={"pb-1"}/> Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
+                                  target={"_blank"}
+                                  rel={"noopener noreferrer"}
+                                  onClick={handleSideMenu}>
+                                <Description className={"pb-1"}/> Resume
                             </Link>
                         </li>
                         <li>

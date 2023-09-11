@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import profile from "./../../../assets/profile.jpg"
-
 function Home() {
     return (
         <div className={"max-w-screen-xl h-[calc(100%-110px)] max-h-[850px] mx-auto md:my-auto px-16 items-center justify-center flex flex-col flex-col-reverse md:flex-row"}>
@@ -32,7 +30,7 @@ function Home() {
             </div>
             <div className={"w-40 h-40 sm:w-60 sm:h-60 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto mb-8 md:mx-8 md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
                 <img className={"transition duration-300 w-full h-auto self-center scale-125 -translate-y-8 sm:-translate-y-16"}
-                     src={profile}
+                     src={process.env.PUBLIC_URL + "profile.jpg"}
                      alt={"profile"} />
             </div>
         </div>

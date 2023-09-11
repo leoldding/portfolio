@@ -10,6 +10,12 @@ function NavLinks() {
                     <Link to={"/projects"} className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}>Projects</Link>
                 </li>
                 <li>
+                    <Link to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
+                          target={"_blank"}
+                          rel={"noopener noreferrer"}
+                          className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}>Resume</Link>
+                </li>
+                <li>
                     <Link
                         to={"https://github.com/leoldding"}
                         target={"_blank"}
