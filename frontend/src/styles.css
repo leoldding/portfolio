@@ -599,11 +599,6 @@ body {
   position: relative;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -624,10 +619,6 @@ body {
   z-index: 20;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -646,11 +637,6 @@ body {
 .my-0\.5 {
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mb-4 {
@@ -709,6 +695,10 @@ body {
   height: 72px;
 }
 
+.h-\[74px\] {
+  height: 74px;
+}
+
 .h-\[calc\(100\%-110px\)\] {
   height: calc(100% - 110px);
 }
@@ -717,31 +707,8 @@ body {
   height: auto;
 }
 
-.h-fit {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-screen {
   height: 100vh;
-}
-
-.h-max {
-  height: -webkit-max-content;
-  height: max-content;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-\[74px\] {
-  height: 74px;
-}
-
-.max-h-\[850px\] {
-  max-height: 850px;
 }
 
 .min-h-\[14rem\] {
@@ -750,15 +717,6 @@ body {
 
 .min-h-\[calc\(100\%-110px\)\] {
   min-height: calc(100% - 110px);
-}
-
-.min-h-screen {
-  min-height: 100vh;
-}
-
-.min-h-max {
-  min-height: -webkit-max-content;
-  min-height: max-content;
 }
 
 .w-2\/3 {
@@ -840,6 +798,10 @@ body {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.touch-none {
+  touch-action: none;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -886,12 +848,6 @@ body {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
@@ -904,16 +860,18 @@ body {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .self-center {
   align-self: center;
 }
 
 .overflow-clip {
   overflow: clip;
-}
-
-.overflow-scroll {
-  overflow: scroll;
 }
 
 .rounded-full {
