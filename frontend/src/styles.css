@@ -624,6 +624,10 @@ body {
   z-index: 20;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -642,6 +646,11 @@ body {
 .my-0\.5 {
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-4 {
@@ -708,12 +717,27 @@ body {
   height: auto;
 }
 
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .h-screen {
   height: 100vh;
 }
 
+.h-max {
+  height: -webkit-max-content;
+  height: max-content;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-\[74px\] {
+  height: 74px;
 }
 
 .max-h-\[850px\] {
@@ -726,6 +750,15 @@ body {
 
 .min-h-\[calc\(100\%-110px\)\] {
   min-height: calc(100% - 110px);
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-max {
+  min-height: -webkit-max-content;
+  min-height: max-content;
 }
 
 .w-2\/3 {
@@ -877,6 +910,10 @@ body {
 
 .overflow-clip {
   overflow: clip;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .rounded-full {
