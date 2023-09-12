@@ -13,17 +13,19 @@ describe("SideMenu", () => {
         const buttonElement = getByRole("button");
         expect(buttonElement).toBeInTheDocument();
         const links = getAllByRole("link");
-        expect(links).toHaveLength(5);
+        expect(links).toHaveLength(6);
         expect(links[0]).toHaveTextContent("Home");
         expect(links[0]).toHaveAttribute("href", "/");
         expect(links[1]).toHaveTextContent("Projects");
         expect(links[1]).toHaveAttribute("href", "/projects");
         expect(links[2]).toHaveTextContent("Resume");
         expect(links[2]).toHaveAttribute("href", "/" + process.env.PUBLIC_URL + "Leo Ding - Resume.pdf");
-        expect(links[3]).toHaveTextContent("GitHub");
-        expect(links[3]).toHaveAttribute("href", "https://github.com/leoldding");
-        expect(links[4]).toHaveTextContent("LinkedIn");
-        expect(links[4]).toHaveAttribute("href", "https://linkedin.com/in/leo-ding");
+        expect(links[3]).toHaveTextContent("Contact");
+        expect(links[3]).toHaveAttribute("href", "mailto:leo.ld.ding@gmail.com");
+        expect(links[4]).toHaveTextContent("GitHub");
+        expect(links[4]).toHaveAttribute("href", "https://github.com/leoldding");
+        expect(links[5]).toHaveTextContent("LinkedIn");
+        expect(links[5]).toHaveAttribute("href", "https://linkedin.com/in/leo-ding");
     });
 
     it("initially offscreen", () => {
@@ -76,7 +78,7 @@ describe("Closing SideMenu", () => {
         expect(backgroundElement).toHaveClass("backdrop-blur-none", "translate-x-full");
     });
 
-   for(let i = 0; i < 5; i++) {
+   for(let i = 0; i < 6; i++) {
        it("closes menu when clicking link " + i, () => {
            const backgroundElement = screen.getByTestId("menuBackground");
            expect(backgroundElement).toHaveClass("backdrop-blur", "translate-x-0");

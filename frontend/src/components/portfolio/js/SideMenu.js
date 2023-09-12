@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Close, Home, Code, Description, GitHub, LinkedIn } from "@mui/icons-material";
+import { Menu, Close, Home, Code, Description, Email, GitHub, LinkedIn } from "@mui/icons-material";
 
 function SideMenu() {
     const [blur, setBlur] = useState("backdrop-blur-none");
@@ -47,6 +47,11 @@ function SideMenu() {
                                   rel={"noopener noreferrer"}
                                   onClick={handleSideMenu}>
                                 <Description className={"pb-1"}/> Resume
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={"mailto:leo.ld.ding@gmail.com"} onClick={handleSideMenu}>
+                                <Email className={"pb-1"}/> Contact
                             </Link>
                         </li>
                         <li>
