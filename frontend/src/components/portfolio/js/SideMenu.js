@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, Close, Home, Code, GitHub, LinkedIn } from "@mui/icons-material";
+import { Menu, Close, Home, Code, Description, GitHub, LinkedIn } from "@mui/icons-material";
 
 function SideMenu() {
     const [blur, setBlur] = useState("backdrop-blur-none");
@@ -25,12 +25,12 @@ function SideMenu() {
                 aria-expanded={"false"}>
                 <Menu className={"pb-1"} />
             </button>
-            <div data-testid={"menuBackground"} className={`${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-200`}
+            <div data-testid={"menuBackground"} className={`${blur} ${position} z-10 fixed top-0 right-0 h-screen w-screen transition duration-200 touch-none`}
                  onClick={handleSideMenu}>
-                <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3 flex flex-col font-medium items-center"}
+                <div className={"z-20 fixed top-0 right-0 bg-orange-400 h-screen w-2/3 flex flex-col font-medium items-center touch-none"}
                      onClick={(e) => e.stopPropagation()}>
                     <Close data-testid={"closeButton"} className={"mt-4 mr-4 mb-8 ml-auto"} onClick={handleSideMenu} />
-                    <ul className={"text-xl space-y-10"}>
+                    <ul className={"text-xl space-y-8"}>
                         <li>
                             <Link to={"/"} onClick={handleSideMenu}>
                                 <Home className={"pb-1"} /> Home
@@ -39,6 +39,14 @@ function SideMenu() {
                         <li>
                             <Link to={"/projects"} onClick={handleSideMenu}>
                                 <Code className={"pb-1"}/> Projects
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
+                                  target={"_blank"}
+                                  rel={"noopener noreferrer"}
+                                  onClick={handleSideMenu}>
+                                <Description className={"pb-1"}/> Resume
                             </Link>
                         </li>
                         <li>
