@@ -16,6 +16,11 @@ function NavLinks() {
                           className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}>Resume</Link>
                 </li>
                 <li>
+                    <Link to={"mailto:leo.ld.ding@gmail.com"}>
+                        Contact
+                    </Link>
+                </li>
+                <li>
                     <Link
                         to={"https://github.com/leoldding"}
                         target={"_blank"}
