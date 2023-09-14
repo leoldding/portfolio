@@ -7,16 +7,28 @@ function NavLinks() {
         <div className={"hidden md:block w-auto"}>
             <ul className={"flex flex-row font-medium space-x-8"}>
                 <li>
-                    <Link to={"/projects"} className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}>Projects</Link>
+                    <Link
+                        to={"/projects"}
+                        className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}
+                    >
+                        Projects
+                    </Link>
                 </li>
                 <li>
-                    <Link to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
-                          target={"_blank"}
-                          rel={"noopener noreferrer"}
-                          className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}>Resume</Link>
+                    <Link
+                        to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
+                        target={"_blank"}
+                        rel={"noopener noreferrer"}
+                        className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}
+                    >
+                        Resume
+                    </Link>
                 </li>
                 <li>
-                    <Link to={"mailto:leo.ld.ding@gmail.com"}>
+                    <Link
+                        to={"mailto:leo.ld.ding@gmail.com"}
+                        className={"transition duration-300 block md:hover:text-orange-500 md:hover:-translate-y-1 p-0"}
+                    >
                         Contact
                     </Link>
                 </li>

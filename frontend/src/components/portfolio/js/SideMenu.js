@@ -32,41 +32,56 @@ function SideMenu() {
                     <Close data-testid={"closeButton"} className={"mt-4 mr-4 mb-8 ml-auto"} onClick={handleSideMenu} />
                     <ul className={"text-xl space-y-8"}>
                         <li>
-                            <Link to={"/"} onClick={handleSideMenu}>
+                            <Link
+                                to={"/"}
+                                onClick={handleSideMenu}
+                            >
                                 <Home className={"pb-1"} /> Home
                             </Link>
                         </li>
                         <li>
-                            <Link to={"/projects"} onClick={handleSideMenu}>
+                            <Link
+                                to={"/projects"}
+                                onClick={handleSideMenu}
+                            >
                                 <Code className={"pb-1"}/> Projects
                             </Link>
                         </li>
                         <li>
-                            <Link to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
-                                  target={"_blank"}
-                                  rel={"noopener noreferrer"}
-                                  onClick={handleSideMenu}>
+                            <Link
+                                to={process.env.PUBLIC_URL + "Leo Ding - Resume.pdf"}
+                                target={"_blank"}
+                                rel={"noopener noreferrer"}
+                                onClick={handleSideMenu}
+                            >
                                 <Description className={"pb-1"}/> Resume
                             </Link>
                         </li>
                         <li>
-                            <Link to={"mailto:leo.ld.ding@gmail.com"} onClick={handleSideMenu}>
+                            <Link
+                                to={"mailto:leo.ld.ding@gmail.com"}
+                                onClick={handleSideMenu}
+                            >
                                 <Email className={"pb-1"}/> Contact
                             </Link>
                         </li>
                         <li>
-                            <Link to={"https://github.com/leoldding"}
-                                  target={"_blank"}
-                                  rel={"noopener noreferrer"}
-                                  onClick={handleSideMenu}>
+                            <Link
+                                to={"https://github.com/leoldding"}
+                                target={"_blank"}
+                                rel={"noopener noreferrer"}
+                                onClick={handleSideMenu}
+                            >
                                 <GitHub className={"pb-1"}/> GitHub
                             </Link>
                         </li>
                         <li>
-                            <Link to={"https://linkedin.com/in/leo-ding"}
-                                  target={"_blank"}
-                                  rel={"noopener noreferrer"}
-                                  onClick={handleSideMenu}>
+                            <Link
+                                to={"https://linkedin.com/in/leo-ding"}
+                                target={"_blank"}
+                                rel={"noopener noreferrer"}
+                                onClick={handleSideMenu}
+                            >
                                 <LinkedIn className={"pb-1"}/> LinkedIn
                             </Link>
                         </li>
