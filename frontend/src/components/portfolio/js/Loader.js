@@ -5,12 +5,12 @@ function Loader() {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        const timeout = setTimeout(() => setLoaded(true), 2000);
+        const timeout = setTimeout(setLoaded, 2250, true);
         return () => clearTimeout(timeout)
     }, []);
 
     return (
-        <div test-id={"loader"} className={"fixed top-0 left-0 z-20 bg-stone-50 w-screen h-screen flex justify-center items-center " + loaded ? "hidden" : "static"}>
+        <div className={"fixed top-0 left-0 z-20 bg-stone-50 w-screen h-screen flex justify-center items-center " + (loaded ? "hidden" : "")}>
             <NewtonsCradle
                 size={80}
                 speed={1.5}
