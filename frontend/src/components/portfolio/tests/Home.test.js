@@ -41,7 +41,7 @@ describe("Home", () => {
           <Router>
              <Home/>
           </Router>);
-      const buttonElement = getByText(/Check out my projects!/);
+      const buttonElement = getByText(/Check out my projects!/).closest("a");
       expect(buttonElement).toHaveAttribute("href", "/projects");
    });
 });
