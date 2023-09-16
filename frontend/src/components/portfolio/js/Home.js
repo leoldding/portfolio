@@ -21,11 +21,11 @@ function Home() {
                     <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Backend Engineer</div>.
                 </h2>
                 <div className={"pt-2 md:pt-3"}>
-                    <button className={"text-md md:text-2xl text-white p-2 md:p-3 rounded-md bg-orange-500 transition duration-300 md:hover:bg-orange-400 md:hover:-translate-x-1 md:hover:-translate-y-1"}>
-                        <Link to={"/projects"}>
+                    <Link to={"/projects"}>
+                        <button className={"text-md md:text-2xl text-white p-2 md:p-3 rounded-md bg-orange-500 transition duration-300 md:hover:bg-orange-400 md:hover:-translate-x-1 md:hover:-translate-y-1"}>
                             Check out my projects!
-                        </Link>
-                    </button>
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className={"w-40 h-40 sm:w-60 sm:h-60 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto mb-8 md:mx-8 md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
