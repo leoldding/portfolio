@@ -6,6 +6,7 @@ import Projects from "./components/portfolio/js/Projects";
 import Navbar from "./components/portfolio/js/Navbar";
 import Footer from "./components/portfolio/js/Footer";
 import NotFound from "./components/portfolio/js/404";
+import Loader from "./components/portfolio/js/Loader";
 
 import "./styles.css";
 
@@ -13,6 +14,7 @@ function App() {
     return (
       <div className={"h-screen"}>
         <Router>
+            <Loader />
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home/>}/>
