@@ -13,10 +13,10 @@ function PortfolioRoutes() {
             <Loader />
             <Navbar />
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/projects" element={<Projects/>}/>
-                <Route path="/404" element={<NotFound/>}/>
-                <Route path="*" element={<Navigate to={"/404"} replace/>}/>
+                <Route path="" element={<Home/>}/>
+                <Route path="projects" element={<Projects/>}/>
+                <Route path="404" element={<NotFound/>}/>
+                <Route path="*" element={<Navigate to={"404"} replace/>}/>
             </Routes>
             <Footer />
         </div>

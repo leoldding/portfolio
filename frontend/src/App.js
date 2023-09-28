@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import PortfolioRoutes from "./components/portfolio/js/PortfolioRoutes";
 
@@ -9,7 +9,9 @@ function App() {
     return (
       <div>
         <Router>
-            <PortfolioRoutes />
+            <Routes>
+                <Route path={"/*"} element={<PortfolioRoutes/>} />
+            </Routes>
         </Router>
       </div>
     )
