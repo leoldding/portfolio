@@ -32,7 +32,7 @@ describe("Home", () => {
       expect(highlightElement).toHaveClass("font-bold", "italic", "bg-orange-200");
       highlightElement = getByText(/Data Science/);
       expect(highlightElement).toHaveClass("font-bold", "italic", "bg-orange-200");
-      highlightElement = getByText(/Backend Engineer/);
+      highlightElement = getByText(/Software Engineer/);
       expect(highlightElement).toHaveClass("font-bold", "italic", "bg-orange-200");
    });
 
