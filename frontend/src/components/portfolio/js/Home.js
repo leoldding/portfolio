@@ -18,7 +18,7 @@ function Home() {
                 </h2>
                 <h2 className={"text-md sm:text-lg md:text-2xl pb-6"}>
                     I enjoy learning about technology and am interested in becoming a
-                    <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Backend Engineer</div>.
+                    <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Software Engineer</div>.
                 </h2>
                 <div className={"pt-2 md:pt-3"}>
                     <Link to={"/projects"}>
