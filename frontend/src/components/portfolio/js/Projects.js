@@ -15,7 +15,7 @@ function Projects() {
                              description={"A web app that shows if I am currently doing work at the coffee shop I frequent. " +
                                  "Admin authentication required to change displayed status. " +
                                  "WebSockets used for realtime updates."}
-                             tags={["Golang", "PostgreSQL", "Docker", "AWS", "ReactJS", "Nginx"]}
+                             tags={["Golang", "PostgreSQL", "Docker", "AWS", "ReactJS", "TailwindCSS", "Nginx"]}
                              featured={true} />
                 <ProjectCard title={"Chat Room"}
                              website={"https://chat.leoding.com"}
