@@ -23,7 +23,7 @@ function Projects() {
                              description={"A web app that offers realtime text communication between users. " +
                                  "Room codes, which are chosen by the user, are used to separate the different rooms. " +
                                  "A publisher-subscriber system is used to send messages to their correct rooms."}
-                             tags={["Golang", "Docker", "AWS", "ReactJS", "Nginx"]}
+                             tags={["Golang", "Docker", "AWS", "ReactJS", "TailwindCSS", "Nginx"]}
                              featured={true} />
             </div>
             <h1 className={"text-2xl md:text-4xl pb-4"}>
