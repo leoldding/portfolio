@@ -29,7 +29,7 @@ function Home() {
                 </div>
             </div>
             <div className={"w-40 h-40 sm:w-60 sm:h-60 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto mb-8 md:mx-8 md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
-                <img className={"transition duration-300 w-full h-auto self-center scale-125 -translate-y-8 sm:-translate-y-16"}
+                <img className={"w-full h-auto self-center"}
                      src={process.env.PUBLIC_URL + "profile.jpg"}
                      alt={"profile"} />
             </div>
