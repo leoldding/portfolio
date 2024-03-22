@@ -1,5 +1,6 @@
 name: Deploy Development Version
 on:
+  workflow_dispatch:
   push:
     branches:
       - '*'
