@@ -30,6 +30,12 @@ function Projects() {
                 Other Projects
             </h1>
             <div className={"flex flex-col md:flex-row flex-wrap"}>
+                <ProjectCard title={"Application Tracker CLI Tool"}
+                             github={"https://github.com/leoldding/apptrack/"}
+                             description={"Developed a CLI tool for efficient job application management. " + 
+                                 "Automated scraping and parsing of job details from LinkedIn, Greenhouse, and Lever pages. " + 
+                                 "Integrated Notion’s API to enable seamless transmission of data into our database system."}
+                             tags={["Golang"]} />
                 <ProjectCard title={"Image Caption Experiment"}
                              github={"https://github.com/leoldding/image-captioning-CLIP"}
                              description={"Implemented 6 different deep learning models based on OpenAI's CLIP model. " +
