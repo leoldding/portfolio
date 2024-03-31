@@ -26,7 +26,7 @@ describe("ProjectCard", () => {
        const listItems = getAllByRole("listitem");
        expect(listItems).toHaveLength(5); // includes links above
        const divElement = getByTestId("cardDiv");
-       expect(divElement).toHaveClass("md:w-1/2")
+       expect(divElement).toHaveClass("col-span-1")
     });
 
     it("renders non-featured project correctly", () => {
@@ -35,7 +35,7 @@ describe("ProjectCard", () => {
               <ProjectCard featured={false}/>
           </Router>);
         const divElement = getByTestId("cardDiv");
-        expect(divElement).toHaveClass("md:w-1/3");
+        expect(divElement).toHaveClass("col-span-1");
     });
 
     it("hides links without route", () => {
