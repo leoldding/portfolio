@@ -1,4 +1,4 @@
-import ReactJS from "react";
+import React from "react";
 
 import ProjectCard from "./ProjectCard.js";
 
@@ -8,7 +8,7 @@ function Projects() {
             <h1 className={"text-2xl md:text-4xl pb-4"}>
                 Featured Projects
             </h1>
-            <div className={"flex flex-col md:flex-row flex-wrap mb-4 md:mb-8"}>
+            <div className={"grid grid-cols-1 md:grid-cols-2 auto-rows-fr mb-4 md:mb-8"}>
                 <ProjectCard title={"Coffee Status"}
                              website={"https://coffee.leoding.com"}
                              github={"https://github.com/leoldding/coffeeStatusV3"}
@@ -29,7 +29,7 @@ function Projects() {
             <h1 className={"text-2xl md:text-4xl pb-4"}>
                 Other Projects
             </h1>
-            <div className={"flex flex-col md:flex-row flex-wrap"}>
+            <div className={"grid grid-cols-1 md:grid-cols-3 auto-rows-fr"}>
                 <ProjectCard title={"Application Tracker CLI Tool"}
                              github={"https://github.com/leoldding/apptrack"}
                              description={"Developed a CLI tool for efficient job application management. " + 
