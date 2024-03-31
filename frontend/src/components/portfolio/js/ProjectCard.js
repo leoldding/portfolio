@@ -8,8 +8,8 @@ function ProjectCard(props) {
     const tagList = props.tags ? props.tags.map(tag => {return <li key={tag}><ProjectTag text={tag} /></li>}) : <div />
 
     return (
-        <div data-testid={"cardDiv"} className={"py-2 " + (props.featured ? "md:w-1/2" : "md:w-1/3")}>
-            <div className={"group block mx-auto w-[98%] bg-orange-300 rounded-md transition duration-300 md:hover:-translate-y-1 md:hover:bg-orange-500"}>
+        <div data-testid={"cardDiv"} className={"py-2 col-span-1 h-full"}>
+            <div className={"group block mx-auto w-[98%] bg-orange-300 rounded-md transition duration-300 md:hover:-translate-y-1 md:hover:bg-orange-500 h-full"}>
                 <div className={"flex flex-col space-y-4 justify-between px-6 py-4 min-h-[14rem] "}>
                     <div className={"flex flex-row items-center justify-between grow-0 space-x-1"}>
                         <h2 className={"text-lg md:text-2xl"}>{props.title}</h2>

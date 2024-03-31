@@ -8,7 +8,7 @@ function Projects() {
             <h1 className={"text-2xl md:text-4xl pb-4"}>
                 Featured Projects
             </h1>
-            <div className={"flex flex-col md:flex-row flex-wrap mb-4 md:mb-8"}>
+            <div className={"grid grid-cols-1 md:grid-cols-2 auto-rows-fr mb-4 md:mb-8"}>
                 <ProjectCard title={"Coffee Status"}
                              website={"https://coffee.leoding.com"}
                              github={"https://github.com/leoldding/coffeeStatusV3"}
@@ -29,9 +29,9 @@ function Projects() {
             <h1 className={"text-2xl md:text-4xl pb-4"}>
                 Other Projects
             </h1>
-            <div className={"flex flex-col md:flex-row flex-wrap"}>
+            <div className={"grid grid-cols-1 md:grid-cols-3 auto-rows-fr"}>
                 <ProjectCard title={"Application Tracker CLI Tool"}
-                             github={"https://github.com/leoldding/apptrack/"}
+                             github={"https://github.com/leoldding/apptrack"}
                              description={"Developed a CLI tool for efficient job application management. " + 
                                  "Automated scraping and parsing of job details from LinkedIn, Greenhouse, and Lever pages. " + 
                                  "Integrated Notion’s API to enable seamless transmission of data into our database system."}
@@ -47,7 +47,7 @@ function Projects() {
                              github={"https://github.com/leoldding/todolistV2"}
                              description={"A web app which allows users to keep track of their \"to-dos\". " +
                                  "Users must create accounts in order to access their own to-do items."}
-                             tags={["Golang", "PostgreSQL", "Docker", "AWS", "ReactJS", "Nginx"]} />
+                             tags={["Golang", "PostgreSQL", "Docker", "AWS", "ReactJS", "CSS", "Nginx"]} />
                 <ProjectCard title={"Media Sentiment Analysis"}
                              github={"https://github.com/leoldding/media-sentiment-analysis"}
                              description={"Created a model which aims to classify the sentiment of given media texts. " +
@@ -59,6 +59,10 @@ function Projects() {
                                  "Trained logistic regression models to classify winners and losers. " +
                                  "Models had an average AUC ROC score of 0.81."}
                              tags={["Java", "SQL", "Spark", "Hadoop", "Hive", "Impala"]} />
+               <ProjectCard title={"Calculator"}
+                             github={"https://github.com/leoldding/calculator"}
+                             description={"Recreated iOS calcultor as a web app."}
+                             tags={["TypeScript", "ReactJS", "CSS"]} />
                 <ProjectCard title={"Spam Classifier"}
                              github={"https://github.com/leoldding/spam-classifier"}
                              description={"Created a logistic regression model which classifies text messages from a dataset as spam. " +
