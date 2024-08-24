@@ -20,6 +20,14 @@ function Home() {
                     I enjoy learning about technology and am interested in becoming a
                     <div className={"inline font-bold italic bg-orange-200 ml-1 px-1"}>Software Engineer</div>.
                 </h2>
+                <h2 className={"text-md sm:text-md md:text-xl"}>
+                    Certifications:
+                </h2>
+                <ul className={"text-md sm:text-md md:text-xl pb-6 list-disc"}>
+                    <li><div className={"inline font-bold italic bg-orange-200 px-1"}>Certified Kubernetes Administrator </div></li>
+                    <li><div className={"inline font-bold italic bg-orange-200 px-1"}>AWS Certified Developer Associate </div></li>
+                    <li><div className={"inline font-bold italic bg-orange-200 px-1"}>AWS Certified Cloud Practitioner </div></li>
+                </ul>
                 <div className={"pt-2 md:pt-3"}>
                     <Link to={"/projects"}>
                         <button className={"text-md md:text-2xl text-white p-2 md:p-3 rounded-md bg-orange-500 transition duration-300 md:hover:bg-orange-400 md:hover:-translate-x-1 md:hover:-translate-y-1"}>
@@ -30,8 +38,8 @@ function Home() {
             </div>
             <div className={"w-40 h-40 sm:w-60 sm:h-60 md:w-96 md:h-96 overflow-clip rounded-full border-orange-400 border-4 mx-auto mb-8 md:mx-8 md:my-auto flex-grow-0 flex-shrink-0 inline-block"}>
                 <img className={"w-full h-auto self-center"}
-                     src={process.env.PUBLIC_URL + "profile.jpg"}
-                     alt={"profile"} />
+                    src={process.env.PUBLIC_URL + "profile.jpg"}
+                    alt={"profile"} />
             </div>
         </div>
     );
